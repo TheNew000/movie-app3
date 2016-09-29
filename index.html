@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie App - jQuery/SASS Style</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="remodal-bg">
+        <div class="dropdown-options">
+            <h3>Genres</h3>
+            <select id="listGenre"></select>
+            <h3>Sort By</h3>
+            <select id="sortOptions">
+            <div id="movie"></div>
+                <option></option>
+                <option value="np">Now Playing</option>
+                <option value="pop">Popular</option>
+                <option value="tr">Top Rated</option>
+                <option value="up">Upcoming</option>
+            </select>
+            <button id="reset"> New Search </button>
+        </div>
+        <div class="container">
+            <div class="poster-grid">
+                <!-- jQuery, get us some HTML -->
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+<div class="remodal" data-remodal-id="modal">
+    <button data-remodal-action="close" class="remodal-close">X</button>
+    <div class="vid-title"></div>
+    <div class="videoPlayer">
+        <div class="video"></div>
+    </div>
+    <div class="videoOption">
+        <div class="videoBD"></div>
+        <div class="vidButtons"></div>
+    </div>
+    <button id="similar" data-remodal-action="close" class="moreBtns">See Similar Movies?</button>
+    <button id="reviews" data-remodal-action="close" class="moreBtns">See Movie Reviews?</button>
+    <button id="images" data-remodal-action="close" class="moreBtns">See Movie Images?</button>
+    <button id="IMDB" class="moreBtns"><img src="css/IMDblogo.png"></button>
+</div>
+<script src="js/remodal.js"></script>
+</body>
+</html>

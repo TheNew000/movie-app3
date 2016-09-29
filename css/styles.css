@@ -1,0 +1,140 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+/* line 27, ../compass/sass/components/_misc.scss */
+.base-font, body .container .col {
+  font-family: "source-serif-pro",Georgia,"Times New Roman",Times,serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ddd;
+}
+
+/* line 5, ../compass/sass/layout/_header.scss */
+#header {
+  width: 100%;
+  position: fixed;
+  background-color: red;
+  height: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 11, ../compass/sass/layout/_header.scss */
+#header .circle {
+  border-radius: 20px;
+  background-color: #ccffcc;
+  border: 3px solid #ff00ff;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 5, ../compass/sass/layout/_footer.scss */
+#footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  background-color: blue;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 6, ../compass/sass/styles.scss */
+body {
+  width: 100%;
+  margin: 0px;
+  background-color: #ccffcc;
+}
+/* line 11, ../compass/sass/styles.scss */
+body .dropdown-options {
+  display: inline-block;
+}
+/* line 13, ../compass/sass/styles.scss */
+body .dropdown-options select {
+  background-color: #30ABAF;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+/* line 23, ../compass/sass/styles.scss */
+body .dropdown-options option {
+  color: #3DE1E3;
+}
+/* line 27, ../compass/sass/styles.scss */
+body .dropdown-options #reset {
+  color: white;
+  background-color: #30ABAF;
+  border-color: #30ABAF;
+  border-radius: 4px;
+}
+/* line 37, ../compass/sass/styles.scss */
+body .container {
+  width: 1200px;
+  overflow: hidden;
+}
+/* line 40, ../compass/sass/styles.scss */
+body .container.after-header {
+  padding-top: 30px;
+}
+/* line 43, ../compass/sass/styles.scss */
+body .container .col {
+  width: 280px;
+  margin: auto 10px;
+  float: left;
+  color: #000;
+}
+/* line 49, ../compass/sass/styles.scss */
+body .container .col .thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 0;
+  background-color: #F98C62;
+  border: 1px solid #F95662;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+/* line 60, ../compass/sass/styles.scss */
+body .container .col img {
+  height: 400px;
+  width: 100%;
+}
+/* line 67, ../compass/sass/styles.scss */
+body .videoPlayer {
+  max-width: 70%;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 73, ../compass/sass/styles.scss */
+body .videoOption {
+  max-width: 42%;
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 78, ../compass/sass/styles.scss */
+body .videoOption .videoBD {
+  width: 100%;
+}
+/* line 81, ../compass/sass/styles.scss */
+body .videoOption .vidButtons {
+  width: 100%;
+}
+/* line 85, ../compass/sass/styles.scss */
+body #IMDB img {
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+}
